@@ -27,3 +27,19 @@ form.addEventListener("submit", function (e) {
   alert("Message submitted successfully!");
   form.reset();
 });
+
+// Initialize EmailJS
+emailjs.init("uooLZP59-_HhplJ_O");
+
+document.getElementById("contact-form").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  emailjs.sendForm("service_9b0dk9f", "template_f9t6123", this)
+    .then(function () {
+      alert("✅ Message sent successfully!");
+    }, function (error) {
+      alert("❌ Failed to send message: " + JSON.stringify(error));
+    });
+
+  this.reset();
+});
