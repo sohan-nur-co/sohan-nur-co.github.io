@@ -20,16 +20,10 @@ function revealOnScroll() {
 window.addEventListener('scroll', revealOnScroll);
 window.addEventListener('load', revealOnScroll);
 
-// Contact form fake submission
-const form = document.querySelector("form");
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-  alert("Message submitted successfully!");
-  form.reset();
-});
-
-// Initialize EmailJS
-emailjs.init("uooLZP59-_HhplJ_O");
+// ✅ EmailJS Integration
+(function () {
+  emailjs.init("uooLZP59-_HhplJ_O"); // Your public key
+})();
 
 document.getElementById("contact-form").addEventListener("submit", function (e) {
   e.preventDefault();
