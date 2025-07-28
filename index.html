@@ -2,68 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sohanur Rahman Sa'd | Network Engineer</title>
-  <link rel="icon" href="favicon.png" type="image/png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sohanur Rahman Sa'd | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
 </head>
 <body>
-  <div class="container">
-    <nav class="navbar">
-      <div class="logo">Sohan<span>Net</span></div>
+
+  <header>
+    <div class="logo">Sohan<span>.Portfolio</span></div>
+    <nav>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#certs">Certifications</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+  </header>
 
-    <header class="hero">
-      <img class="profile-pic" src="Profile Square.jpg" alt="Sohanur Rahman Sa'd" />
-      <h1>Hi, I'm <span>Sohanur Rahman Sa'd</span></h1>
-      <p>Professional Network Engineer</p>
-    </header>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hello, I'm <span>Sohanur Rahman Sa'd</span></h1>
+      <p>A passionate Network Engineer with certifications like MTCNA, CCNA, and CCNP. Completed Diploma in Computer Science from Munshiganj Polytechnic Institute.</p>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </div>
+    <div class="hero-img">
+      <img src="Profile Square.jpg" alt="Sohanur Rahman Sa'd">
+    </div>
+  </section>
 
-    <section id="about" class="card reveal">
-      <h2>About Me</h2>
-      <p>I am a certified network engineer with strong technical expertise and a diploma in Computer Science from Munshiganj Polytechnic Institute. I specialize in building secure and scalable networks, ensuring uptime, and driving IT innovation through smart configurations.</p>
-    </section>
+  <section id="about" class="reveal">
+    <h2>About Me</h2>
+    <p>I am deeply passionate about network systems and connectivity. With practical knowledge and hands-on experience, I aim to build and maintain fast, secure, and reliable systems.</p>
+  </section>
 
-    <section id="skills" class="card reveal">
-      <h2>Core Skills</h2>
-      <ul>
-        <li>Network Infrastructure Design</li>
-        <li>Firewall, Routing & VPNs</li>
-        <li>IP Management & Subnetting</li>
-        <li>Linux/Windows Server Admin</li>
-        <li>Security Hardening & Monitoring</li>
-      </ul>
-    </section>
+  <section id="skills" class="reveal">
+    <h2>Certifications</h2>
+    <div class="cards">
+      <div class="card">MTCNA</div>
+      <div class="card">CCNA</div>
+      <div class="card">CCNP</div>
+      <div class="card">Routing & Switching</div>
+      <div class="card">Network Security</div>
+    </div>
+  </section>
 
-    <section id="certs" class="card reveal">
-      <h2>Certifications</h2>
-      <ul>
-        <li>MTCNA – MikroTik Certified Network Associate</li>
-        <li>CCNA – Cisco Certified Network Associate</li>
-        <li>CCNP – Cisco Certified Network Professional</li>
-      </ul>
-    </section>
+  <section id="contact" class="reveal">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p>You can also connect with me:</p>
+    <p>
+      📧 <a href="mailto:send.sohan@gmail.com">send.sohan@gmail.com</a><br/>
+      📞 <a href="tel:+8801601968313">01601968313</a><br/>
+      🔗 <a href="https://facebook.com/sohan.nur.co" target="_blank">Facebook</a> |
+      <a href="https://instagram.com/sohan.nur.co" target="_blank">Instagram</a>
+    </p>
+  </section>
 
-    <section id="contact" class="card reveal">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:send.sohan@gmail.com">send.sohan@gmail.com</a></p>
-      <p>Phone: <a href="tel:+8801601968313">01601-968313</a></p>
-      <div class="socials">
-        <a href="https://www.facebook.com/sohan.nur.co" target="_blank">Facebook</a>
-        <a href="https://www.instagram.com/sohan.nur.co" target="_blank">Instagram</a>
-      </div>
-    </section>
-
-    <footer>
-      &copy; 2025 Sohanur Rahman Sa'd. Built with passion and precision.
-    </footer>
-  </div>
+  <footer>
+    <p>© 2025 Sohanur Rahman Sa'd. All Rights Reserved.</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
