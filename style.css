@@ -187,3 +187,25 @@ footer {
     flex-direction: column;
   }
 }
+
+form input, form textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+form button {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+form button:hover {
+  background-color: #0056b3;
+}
